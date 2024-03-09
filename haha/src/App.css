@@ -1,0 +1,1061 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Eagle+Lake&family=Forum&family=Italiana&family=Prata&family=Protest+Revolution&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+
+  background-color: black;
+}
+
+/* video styling */
+.App {
+  width: 100%;
+  height: 100vh;
+}
+
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: relative;
+  top: -4.3%;
+  filter: brightness(0.8);
+}
+
+a {
+  text-decoration: none;
+  color: brown;
+}
+
+.nav__brand {
+  font-size: 29px;
+  font-weight: 1000;
+  letter-spacing: 1.5px;
+  font-family: "Forum", serif;
+}
+
+.nav {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 100px;
+  width: 100%;
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: brown;
+  font-size: 20px;
+}
+
+.icons_links {
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+  color: brown;
+}
+
+.main_text {
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 5rem;
+  font-family: "Prata", serif;
+  font-weight: 900;
+  letter-spacing: 12px;
+  color: brown;
+  text-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+}
+
+.bio {
+  font-size: 25px;
+  font-family: "Forum", serif;
+  letter-spacing: 5px;
+}
+
+.smallText {
+  font-size: 2rem;
+  text-align: center;
+  font-family: "Forum", serif;
+  letter-spacing: 1px;
+  padding: 5% 15%;
+  color: whitesmoke;
+}
+
+.skill {
+  text-align: center;
+  font-family: "Protest Riot", sans-serif;
+  font-weight: 400;
+  font-size: 3rem;
+  color: brown;
+  letter-spacing: 3px;
+  padding-top: 10px;
+}
+
+.line {
+  height: 1px;
+  width: 250px;
+  background-color: white;
+  margin: 10px 0px;
+  font-size: 1px;
+}
+
+#haha {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+  width: 100%;
+  object-fit: contain;
+}
+
+#haha img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.fade-in {
+  opacity: 0;
+  transition: opacity 2s ease-in-out;
+}
+
+.visible {
+  opacity: 1;
+}
+
+
+
+.buttonText {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.buttoning {
+  font-size: 18px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  display: inline-block;
+  text-align: center;
+  font-weight: bold;
+  padding: 0.7em 2em;
+  border: 3px solid brown;
+  border-radius: 2px;
+  position: relative;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1);
+  color: brown;
+  text-decoration: none;
+  background-color: black;
+  transition: 0.3s ease all;
+  z-index: 1;
+}
+
+.buttoning a {
+  color: brown;
+}
+
+.buttoning a:hover {
+  color: black;
+}
+
+.buttoning:before {
+  transition: 0.5s all ease;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  opacity: 0;
+  content: '';
+  background-color: brown;
+  z-index: -1;
+}
+
+.buttoning:hover,
+.buttoning:focus {
+  color: black;
+}
+
+.buttoning:hover a,
+.buttoning:focus a {
+  color: black;
+}
+
+.buttoning:hover:before,
+.buttoning:focus:before {
+  transition: 0.5s all ease;
+  left: 0;
+  right: 0;
+  opacity: 1;
+}
+
+.buttoning:active {
+  transform: scale(0.9);
+}
+
+/* mainskills css  */
+.mainSkills {
+  width: 100%;
+  padding: 20px 0px 0px 0px;
+  margin: 150px 0px 0px 0px;
+  /* background-color: brown; */
+}
+
+.rasengan {
+  height: 300px;
+  width: 300px;
+  position: relative;
+  /* background-color: aqua; */
+}
+
+.rasengan img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.ski {
+  font-family: "Protest Riot", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 3rem;
+  letter-spacing: 3px;
+  color: brown;
+  border: solid brown;
+  border-width: 0px 0px 2px 0px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  /* Move up by 100% of the h1 height */
+  text-align: center;
+  margin: 20px 0px;
+}
+
+
+
+.smallLine {
+  font-size: 1rem;
+  text-align: center;
+  font-family: "Forum", serif;
+  letter-spacing: 1px;
+  padding: 0.1%;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  color: whitesmoke;
+}
+
+.SkillLine {
+  height: 2px;
+  width: 200px;
+  margin-bottom: 50px;
+  background-color: brown;
+  font-size: 1px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .rotate {
+    animation: App-logo-spin infinite 5s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animated-item {
+  opacity: 0;
+  transform: translateY(250px);
+  /* Start from below */
+  transition: opacity 2s ease, transform 2s ease;
+
+}
+
+.animated-item.reveal {
+  opacity: 1;
+  transform: translateY(0);
+  /* Move to original position */
+}
+
+/* skills css */
+.logos {
+  width: 100%;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  gap: 100px;
+  padding: 10px;
+  grid-template-columns: repeat(5, 1fr);
+  margin: 80px 0px;
+  padding: 0px 250px;
+}
+
+.png {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* box-shadow: #E34E26 0px 48px 100px 0px; */
+  gap: 10px;
+}
+
+.png p {
+  text-align: center;
+  font-family: "Forum", serif;
+  font-size: 20px;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+#javascript {
+  color: #F5DD19;
+}
+
+#html {
+  color: #E34E26;
+  object-fit: fill;
+}
+
+#css {
+  color: #0077bb;
+}
+
+#react {
+  color: #62DAFC;
+}
+
+#mongo {
+  color: #3F9939;
+}
+
+#twind {
+  color: #56a150;
+}
+
+#sql {
+  color: #094658;
+}
+
+#c {
+  color: #242A68;
+}
+
+#cpp {
+  color: #004481;
+}
+
+#git {
+  color: #ffffff;
+}
+
+.png img {
+  height: 80px;
+  width: 80px;
+  object-fit: contain;
+}
+
+#spinning {
+  object-fit: contain;
+  animation: App-logo-spin infinite 5s linear;
+}
+
+.projectss {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.project_heading {
+  text-align: center;
+  font-family: "Protest Riot", sans-serif;
+  font-weight: 400;
+  color: brown;
+  font-size: 3rem;
+  letter-spacing: 3px;
+  padding-top: 10px;
+}
+
+.cards_container {
+  margin: 30px 0px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  display: grid;
+  padding: 0px 200px;
+  place-items: center;
+  place-content: center;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.cards {
+  gap: 30px;
+}
+
+.cards img {
+  height: 250px;
+  width: 250px;
+  float: top;
+  object-fit: cover;
+}
+
+.cards h2 {
+  font-size: 1.5rem;
+  text-align: left;
+  font-family: "Forum", serif;
+  letter-spacing: 1px;
+  margin: 10px 0px;
+  color: brown;
+}
+
+.cards p {
+  color: whitesmoke;
+  font-size: 1rem;
+  text-align: left;
+  font-family: "Forum", serif;
+  letter-spacing: 1px;
+  margin-top: 10px;
+}
+
+.education {
+  display: grid;
+  place-items: center;
+  width: 100%;
+}
+
+.study {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.study h1 {
+  text-align: center;
+  font-family: "Protest Riot", sans-serif;
+  font-weight: 400;
+  font-size: 3rem;
+  letter-spacing: 3px;
+  padding-top: 10px;
+  color: brown;
+  margin-top: 50px;
+}
+
+.image-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.image-container img {
+  margin: 30px 0px 10px 0;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.3s ease; /* Smooth transition for scaling */
+}
+
+.image-container:hover img {
+  transform: scale(1.1); /* Scale up by 10% */
+}
+
+
+.study p {
+  font-size: 1.5rem;
+  text-align: center;
+  font-family: "Forum", serif;
+  letter-spacing: 1px;
+  padding: 0.1%;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.details {
+  color: brown;
+  flex-direction: column;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+#child {
+  margin: 50px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  color: brown;
+}
+
+.div_text {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#child h1 {
+  font-size: 2rem;
+  font-family: "Forum", serif;
+  letter-spacing: 1px;
+}
+
+#child p {
+  font-family: "Forum", serif;
+  font-size: 1.5rem;
+  color: white;
+  margin: 10px 0px;
+}
+
+.semi {
+  height: 100px;
+  width: 200px;
+  border-radius: 150px 150px 0 0;
+  color: wheat;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact_info {
+  height: 100px;
+  width: 200px;
+  border-radius: 0 0 150px 150px;
+  color: wheat;
+  background-color: brown;
+
+}
+
+.contact,
+.tag {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.tag h1 {
+  font-size: 1.5rem;
+  text-align: center;
+  font-family: "Forum", serif;
+  letter-spacing: 1px;
+  padding: 5% 15%;
+  color: whitesmoke;
+}
+
+.end {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+
+span {
+  color: red;
+}
+
+.love {
+  font-size: 1rem;
+  text-align: center;
+  color: wheat;
+  font-family: "Forum", serif;
+}
+
+.socialmedia a img {
+  gap: 30px;
+  height: 30px;
+  width: 30px;
+  object-fit: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.socialmedia {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+#child img {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+}
+   
+
+/* form css  */
+.form-container {
+  margin-top: 90px ;
+  width: 400px;
+  background: linear-gradient(#000000, #000000) padding-box,
+              linear-gradient(145deg, transparent 35%,#e81cff, #40c9ff) border-box;
+  border: 2px solid transparent;
+  padding: 32px 24px;
+  font-size: 14px;
+  font-family: inherit;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-sizing: border-box;
+  border-radius: 16px;
+  background-size: 200% 100%;
+  animation: gradient 5s ease infinite;
+  font-family: "Forum", serif;
+  letter-spacing: 1px;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.form-container button:active {
+  scale: 0.95;
+}
+
+.form-container .form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-family: "Forum", serif;
+  letter-spacing: 1px;
+}
+
+.form-container .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  font-family: "Forum", serif;
+  letter-spacing: 1px;
+}
+
+.form-container .form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #717171;
+  font-weight: 600;
+  font-size: 12px;
+  font-family: "Forum", serif;
+  letter-spacing: 1px;
+}
+
+.form-container .form-group input {
+  width: 100%;
+  padding: 12px 16px;
+  border-radius: 8px;
+  color: #fff;
+  font-family: inherit;
+  background-color: transparent;
+  border: 1px solid #414141;
+  font-family: "Forum", serif;
+  letter-spacing: 1px;
+}
+
+.form-container .form-group textarea {
+  width: 100%;
+  padding: 12px 16px;
+  border-radius: 8px;
+  resize: none;
+  color: #fff;
+  height: 96px;
+  border: 1px solid #414141;
+  background-color: transparent;
+  font-family: inherit;
+  font-family: "Forum", serif;
+  letter-spacing: 1px;
+}
+
+.form-container .form-group input::placeholder {
+  opacity: 0.5;
+}
+
+.form-container .form-group input:focus {
+  outline: none;
+  border-color: #e81cff;
+  font-family: "Forum", serif;
+  letter-spacing: 1px;
+}
+
+.form-container .form-group textarea:focus {
+  outline: none;
+  border-color: #e81cff;
+  font-family: "Forum", serif;
+  letter-spacing: 1px;
+}
+
+.form-container .form-submit-btn {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  align-self: flex-start;
+  font-family: inherit;
+  color: #717171;
+  font-weight: 600;
+  width: 40%;
+  background: black;
+  border: 1px solid #414141;
+  padding: 12px 16px;
+  font-size: inherit;
+  gap: 8px;
+  margin-top: 8px;
+  cursor: pointer;
+  border-radius: 6px;
+  font-family: "Forum", serif;
+  letter-spacing: 1px;
+}
+
+.form-container .form-submit-btn:hover {
+  background-color: #e81cff;
+  font-family: "Forum", serif;
+  letter-spacing: 1px;
+  border-color: #e81cff;
+  color: white;
+}
+
+
+.email-js {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  flex-direction: column;
+}
+.sending {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+
+
+@media (max-width: 480px) {
+
+  .App {
+    width: 100%;
+    height: 100vh;
+  }
+
+  .App video {
+    width: 100%;
+    height: 110%;
+    object-fit: cover;
+  }
+
+  .nav__brand {
+    font-size: 23px;
+    color: brown;
+    font-weight: 1000;
+    letter-spacing: 1.5px;
+    font-family: "Forum", serif;
+  }
+
+  .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 100px;
+    width: 100%;
+    color: brown;
+    margin: 30px 0px;
+    font-size: 20px;
+  }
+
+  .icons_links {
+    gap: 20px;
+  }
+
+  .main_text {
+    font-size: 2rem;
+    letter-spacing: 5px;
+  }
+
+  .bio {
+    font-size: 15px;
+    margin-top: 10px;
+    letter-spacing: 5px;
+  }
+
+  .smallText {
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+  }
+
+  #haha {
+    height: 150px;
+    width: 100%;
+    object-fit: contain;
+  }
+
+  #haha img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .skill {
+    font-size: 2rem;
+    letter-spacing: 1px;
+  }
+
+  #frontend {
+    margin: 20px 10px;
+    font-size: 1.2rem;
+    text-align: center;
+    font-family: "Forum", serif;
+    letter-spacing: 1px;
+    padding: 5% 15%;
+    color: whitesmoke;
+  }
+
+  button {
+    font-size: 1rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+
+  .ski {
+    font-size: 2rem;
+    letter-spacing: 1px;
+  }
+
+  .rasengan {
+    height: 190px;
+    width: 190px;
+    position: relative;
+    /* background-color: aqua; */
+  }
+
+  .rasengan img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    display: block;
+  }
+
+  .logos {
+    width: 100%;
+    height: 500px;
+    display: grid;
+    place-items: center;
+    padding: 10px 60px;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 200px;
+  }
+
+  .png img {
+    height: 50px;
+    width: 50px;
+    object-fit: contain;
+  }
+
+  .png {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    margin: 0 -30px;
+  }
+
+  .png p {
+    text-align: center;
+    font-family: "Forum", serif;
+    font-size: 15px;
+    letter-spacing: 2px;
+    font-weight: bold;
+  }
+
+  #html_img {
+    height: 60px;
+    width: 60px;
+    object-fit: cover;
+  }
+
+  #js_img {
+    height: 40px;
+    width: 40px;
+    object-fit: contain;
+    margin-left: 20px;
+  }
+
+  .project_heading {
+    font-size: 2rem;
+    margin: 10px 0px;
+  }
+
+  .cards_container {
+    margin: 30px 0px;
+    padding: 0px 30px;
+    width: 100%;
+    height: auto;
+    display: grid;
+    place-items: center;
+    place-content: center;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .cards {
+    gap: 30px;
+  }
+
+  .cards:nth-child(3) {
+    margin-top: 11px;
+  }
+
+  .cards:nth-child(6) {
+    margin-top: 12px;
+  }
+
+  .cards img {
+    height: 150px;
+    width: 150px;
+  }
+
+  .cards h2 {
+    font-size: 1rem;
+  }
+
+  .cards p {
+    font-size: 0.8rem;
+  }
+
+  .study h1 {
+    font-size: 2rem;
+    letter-spacing: 1px;
+  }
+
+  .education {
+    width: 100%;
+  }
+
+  .study h1 {
+    font-size: 2rem;
+    letter-spacing: 2px;
+
+  }
+
+  .study img {
+    margin: 20px 0px 10px 0;
+    height: 150px;
+    width: 350px;
+    aspect-ratio: 1/2;
+  }
+
+  .study p {
+    font-size: 0.9rem;
+  }
+
+  #child img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+  }
+
+  #child h1 {
+    font-size: 1.2rem;
+    font-family: "Forum", serif;
+    letter-spacing: 1px;
+  }
+
+  #child p {
+    font-family: "Forum", serif;
+    font-size: 1rem;
+    color: white;
+    margin: 10px 0px;
+  }
+
+  .details {
+    padding: 0px 40px;
+  }
+
+  #child {
+    margin: 20px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    color: brown;
+  }
+
+  .tag p {
+    font-size: 1rem;
+    margin-bottom: 40px;
+  }
+
+  .end {
+    height: auto;
+    width: 100%;
+  }
+
+  span {
+    color: red;
+    height: 10px;
+    width: 10px;
+  }
+
+  .love {
+    font-size: 0.5rem;
+    text-align: center;
+    color: wheat;
+    font-family: "Forum", serif;
+  }
+
+  .socialmedia a img {
+    gap: 10px;
+    height: 10px;
+    width: 10px;
+    object-fit: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .socialmedia {
+    gap: 10px;
+  }
+  .form-container {
+    width: 300px;
+  }
+}
